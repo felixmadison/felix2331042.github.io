@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background-size: cover;
+    background-color: gray;
+    height: 100%;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.navbar{
+    width: 85%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    width: 140px;
+    height: 130px;
+    cursor: pointer;
+    margin-top: -2%;
+    margin-left:-4%;
+}
+
+ul{
+    margin-top: -3%;
+    margin-right: 8%;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-top: -3%;
+    transition: .4s ease;
+}
+
+ul li a:hover{
+    color: black;
+}
+
+.intro{
+    margin-left: 35%;
+    margin-top: -1%;
+}
+
+.intro h1{
+    font-size: 100px;
+    color: white;
+}
+
+.intro span{
+    color: black;
+}
+
+.info{
+    margin-left: 26%;
+    margin-top: 8%;
+}
+
+.info p{
+    position: absolute;
+    font-size: 19px;
+    z-index: 2;
+    font-family: calibri;
+    color: black;
+}
+
+#rectangle{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: -75px;
+    z-index: 1;
+    background-color: white;
+}
+
+.album{
+    margin-left: 42%;
+    margin-top: 5%;
+}
+
+.album h1{
+    font-size: 40px;
+}
+.image{
+    width: 5%;
+    height: 35%;
+    position: static;
+    margin-left: 40%;
+    top: 100%;
+}
+
+.image img{
+    position: relative;
+    height: 100%;
+    margin-top: 40px;
+    left: 45px;
+    transform: translate(-30%);
+    bottom: 10;
+    transition: left .3s ease;
+}
+
+.image img:hover {
+    left: 10%;
+}
+
+.outro{
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+.outro h2{
+    font-size: 30px;
+    color: white;
+}
+
+.outro span{
+    color: black;
+}
+
+.icons a{
+    text-decoration: none;
+    color: white;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    margin-top: 50px;
+    color: black;
+    font-size: 40px;
+}
+
+.icon1{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.icon2{
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.icon3{
+    width: 50px;
+    height: 50px;
+}
