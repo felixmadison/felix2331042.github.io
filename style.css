@@ -67,6 +67,114 @@ ul li a:hover{
     color: black;
 }
 
+.album{
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.album h1{
+    font-size: 60px;
+}
+
+.image{
+    display: flex;
+    width: 100%;
+    transition: 2s;
+}
+
+.image img{
+    width: 100%;
+}
+
+.wrapper{
+    width: 900px;
+    height: 600px;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#slide-1:target ~ .image{
+    margin-left: 0px;
+}
+
+#slide-2:target ~ .image{
+    margin-left: -100%;
+}
+
+#slide-3:target ~ .image{
+    margin-left: -200%;
+}
+
+.navigation a {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #dedede;
+    font-size: 0px;
+    border-radius: 50%;
+    margin: 3px;
+    transition: 1s;
+}
+
+.navigation a:hover{
+    background-color: #666;
+}
+
+.navigation{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: -50px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 10px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(-45deg, white, #666);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px 0 20px;
+}
+
+.sidebar header h2{
+    font-size: 32px;
+    color: #fff;
+    padding-bottom: 5px;
+}
+
+.scrollbox{
+    overflow: auto;
+    padding-right: 10px;
+}
+
+.scrollbox-inner p{
+    font-size: 16px;
+    color: #000;
+}
+
+.sidebar footer h2{
+    font-size: 24px;
+    color: #000;
+    padding: 15px 0 40px;
+}
+
 .info{
     margin-left: 26%;
     margin-top: 8%;
@@ -82,41 +190,16 @@ ul li a:hover{
 
 #rectangle{
     position: relative;
-    width: 100%;
+    width: 75%;
     height: 200px;
     margin-top: -75px;
     z-index: 1;
     background-color: white;
-}
-
-.album{
-    margin-left: 42%;
-    margin-top: 5%;
-}
-
-.album h1{
-    font-size: 40px;
-}
-.image{
-    width: 5%;
-    height: 35%;
-    position: static;
-    margin-left: 40%;
-    top: 100%;
-}
-
-.image img{
-    position: relative;
-    height: 100%;
-    margin-top: 40px;
-    left: 45px;
-    transform: translate(-30%);
-    bottom: 10;
-    transition: left .3s ease;
-}
-
-.image img:hover {
-    left: 10%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 100px;
+    left: 0;
+    right: 0;
 }
 
 .outro{
